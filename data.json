@@ -1,0 +1,34 @@
+[
+    {
+        "hardname": "ハード名",
+        "maker": "メーカー",
+        "release": "発売日",
+        "price": "発売当初価格",
+        "sales": "販売台数",
+        "class": "title"
+    },
+    {
+        "hardname": "スーパーファミコン",
+        "maker": "任天堂",
+        "release": "1990/11/21",
+        "price": "9,800円",
+        "sales": "1,717万台",
+        "class": "item"
+    },
+    {
+        "hardname": "メガドライブ",
+        "maker": "セガ・エンタープライゼス",
+        "release": "1988/10/29",
+        "price": "21,000円",
+        "sales": "358万台",
+        "class": "item"
+    },
+    {
+        "hardname": "PCエンジン",
+        "maker": "ハドソン/NECホームエレクトロニクス",
+        "release": "1987/10/30",
+        "price": "24,800円",
+        "sales": "750万台",
+        "class": "item"
+    }
+]

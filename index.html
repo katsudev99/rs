@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- タイトル、favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>RED STONE 攻略サイト</title>
+
+    <!-- CSS, Web Fonts -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./item.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.getJSON("item.json", function (data) {
+                var
+                    item_wrapper = $(".item-wrapper"),
+                    len = data.length;
+
+                for (var i = 0; i < len; i++) {
+                    // div class="item"
+                    item_wrapper.append($("<div>").attr({
+                        id: data[i].Id,
+                        class: "item"
+                    }));
+
+                    // アイテムの詳細を出力する
+                    var item = $("#" + data[i].Id);
+                    // アイテム アイコン
+                    item.append($("<img>").attr({
+                        src: "/images/hatena.png",
+                        alt: ""
+                    }));
+
+
+                    item.append($("<p>").attr({
+                        class: "item-p"
+                    }));
+
+                    // アイテム名
+                    item.children(".item-p").append($("<span>").attr({
+                        class: "unique-color"
+                    }).text(data[i].Name)).append($("<br>"));
+
+                    // 説明文（"基本情報"）
+                    item.children(".item-p").append($("<span>").attr({
+                        class: "system-color-color"
+                    }).text("<基本情報>")).append($("<br>"));
+
+                    // アイテム オプション
+                    //             <div class="item" data-category="nx スキル">
+                    //             <img src="./images/hatena.png" alt="">
+                    //             <!-- アイテム -->
+                    //             <p>
+                    //                 <span class="nx-unique-color">雷音[Nx]</span><br>
+                    //                 <span class="system-color">&lt;基本情報&gt;</span><br>
+                    //                 - ネックレス<br>
+                    //                 - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+                    //                 - カリスマ <span class="option-color">150</span> 増加<br>
+                    //                 - すべての能力値 <span class="option-color">+100</span><br>
+                    //                 - 攻撃速度 <span class="option-color">+30</span>％<br>
+                    //                 - 移動速度 <span class="option-color">+30</span>％<br>
+                    //                 - CP獲得ボーナス <span class="option-color">25</span>％<br>
+                    //                 <br>
+                    //                 <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    //                 - このアイテムの着用レベル <span class="option-color">-100</span><br>
+                    //                 - 運 <span class="option-color">175</span> 増加<br>
+                    //                 - 最終ダメージ <span class="option-color">+10</span>％<br>
+                    //                 - 回避率 <span class="option-color">+10</span>％<br>
+                    //             </p>
+                    //              </div><br>
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- フィルターボタン 対応 -->
+    <div class="category-btn">
+        <a href="#" data-filter="all">すべて</a>
+        <a href="#" data-filter="nx">Nx</a>
+        <a href="#" data-filter="non-nx">N</a>
+        <a href="#" data-filter="スキル">スキル</a>
+    </div>
+
+    <!-- フィルター検索 対応 -->
+    <div class="search-area">
+        <form>
+            <input type="text" id="search-text" placeholder="検索ワードを入力">
+        </form>
+    </div>
+
+    <!-- アイテム一覧 -->
+    <!-- アイテム -->
+    <div class="item-wrapper category-list target-area">
+    </div>
+</body>
+
+</html>
