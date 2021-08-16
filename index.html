@@ -16,65 +16,65 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $.getJSON("item.json", function (data) {
-                var
-                    item_wrapper = $(".item-wrapper"),
-                    len = data.length;
+            // $.getJSON("item.json", function (data) {
+            //     var
+            //         item_wrapper = $(".item-wrapper"),
+            //         len = data.length;
 
-                for (var i = 0; i < len; i++) {
-                    // div class="item"
-                    item_wrapper.append($("<div>").attr({
-                        id: data[i].Id,
-                        class: "item"
-                    }));
+            //     for (var i = 0; i < len; i++) {
+            //         // div class="item"
+            //         item_wrapper.append($("<div>").attr({
+            //             id: data[i].Id,
+            //             class: "item"
+            //         }));
 
-                    // アイテムの詳細を出力する
-                    var item = $("#" + data[i].Id);
-                    // アイテム アイコン
-                    item.append($("<img>").attr({
-                        src: "./images/hatena.png",
-                        alt: ""
-                    }));
+            //         // アイテムの詳細を出力する
+            //         var item = $("#" + data[i].Id);
+            //         // アイテム アイコン
+            //         item.append($("<img>").attr({
+            //             src: "./images/hatena.png",
+            //             alt: ""
+            //         }));
 
 
-                    item.append($("<p>").attr({
-                        class: "item-p"
-                    }));
+            //         item.append($("<p>").attr({
+            //             class: "item-p"
+            //         }));
 
-                    // アイテム名
-                    item.children(".item-p").append($("<span>").attr({
-                        class: "unique-color"
-                    }).text(data[i].Name)).append($("<br>"));
+            //         // アイテム名
+            //         item.children(".item-p").append($("<span>").attr({
+            //             class: "unique-color"
+            //         }).text(data[i].Name)).append($("<br>"));
 
-                    // 説明文（"基本情報"）
-                    item.children(".item-p").append($("<span>").attr({
-                        class: "system-color-color"
-                    }).text("<基本情報>")).append($("<br>"));
+            //         // 説明文（"基本情報"）
+            //         item.children(".item-p").append($("<span>").attr({
+            //             class: "system-color-color"
+            //         }).text("<基本情報>")).append($("<br>"));
 
-                    item.children(".item-p").text("- ネックfレス");
-                    // アイテム オプション
-                    //             <div class="item" data-category="nx スキル">
-                    //             <img src="./images/hatena.png" alt="">
-                    //             <!-- アイテム -->
-                    //             <p>
-                    //                 <span class="nx-unique-color">雷音[Nx]</span><br>
-                    //                 <span class="system-color">&lt;基本情報&gt;</span><br>
-                    //                 - ネックレス<br>
-                    //                 - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
-                    //                 - カリスマ <span class="option-color">150</span> 増加<br>
-                    //                 - すべての能力値 <span class="option-color">+100</span><br>
-                    //                 - 攻撃速度 <span class="option-color">+30</span>％<br>
-                    //                 - 移動速度 <span class="option-color">+30</span>％<br>
-                    //                 - CP獲得ボーナス <span class="option-color">25</span>％<br>
-                    //                 <br>
-                    //                 <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                    //                 - このアイテムの着用レベル <span class="option-color">-100</span><br>
-                    //                 - 運 <span class="option-color">175</span> 増加<br>
-                    //                 - 最終ダメージ <span class="option-color">+10</span>％<br>
-                    //                 - 回避率 <span class="option-color">+10</span>％<br>
-                    //             </p>
-                    //              </div><br>
-                }
+            //         item.children(".item-p").text("- ネックレス");
+            // アイテム オプション
+            //             <div class="item" data-category="nx スキル">
+            //             <img src="./images/hatena.png" alt="">
+            //             <!-- アイテム -->
+            //             <p>
+            //                 <span class="nx-unique-color">雷音[Nx]</span><br>
+            //                 <span class="system-color">&lt;基本情報&gt;</span><br>
+            //                 - ネックレス<br>
+            //                 - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+            //                 - カリスマ <span class="option-color">150</span> 増加<br>
+            //                 - すべての能力値 <span class="option-color">+100</span><br>
+            //                 - 攻撃速度 <span class="option-color">+30</span>％<br>
+            //                 - 移動速度 <span class="option-color">+30</span>％<br>
+            //                 - CP獲得ボーナス <span class="option-color">25</span>％<br>
+            //                 <br>
+            //                 <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+            //                 - このアイテムの着用レベル <span class="option-color">-100</span><br>
+            //                 - 運 <span class="option-color">175</span> 増加<br>
+            //                 - 最終ダメージ <span class="option-color">+10</span>％<br>
+            //                 - 回避率 <span class="option-color">+10</span>％<br>
+            //             </p>
+            //              </div><br>
+        }
             });
         });
     </script>
@@ -99,7 +99,286 @@
     <!-- アイテム一覧 -->
     <!-- アイテム -->
     <div class="item-wrapper category-list target-area">
+        <div class="item" data-category="non-nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <p>
+                <span class="unique-color">雷音</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ネックレス<br>
+                - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+                - カリスマ <span class="option-color">150</span> 増加<br>
+                - すべての能力値 <span class="option-color">+50</span><br>
+                - 攻撃速度 <span class="option-color">+25</span>％<br>
+                - 移動速度 <span class="option-color">+20</span>％<br>
+                - CP獲得ボーナス <span class="option-color">20</span>％<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+        </div><br>
+        <div class="item" data-category="nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">雷音[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ネックレス<br>
+                - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+                - カリスマ <span class="option-color">150</span> 増加<br>
+                - すべての能力値 <span class="option-color">+100</span><br>
+                - 攻撃速度 <span class="option-color">+30</span>％<br>
+                - 移動速度 <span class="option-color">+30</span>％<br>
+                - CP獲得ボーナス <span class="option-color">25</span>％<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル <span class="option-color">-100</span><br>
+                - 運 <span class="option-color">175</span> 増加<br>
+                - 最終ダメージ <span class="option-color">+10</span>％<br>
+                - 回避率 <span class="option-color">+10</span>％<br>
+            </p>
+        </div><br>
+        <div class="item" data-category="non-nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="unique-color">水魚の交わり</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ヘルメット<br>
+                - 防御力 34 増加<br>
+                - すべての状態異常 抵抗 30％ 増加<br>
+                - 全ての属性抵抗 + 30％<br>
+                - 防御力 + 85％<br>
+                - 最大HP + 45％<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+        </div><br>
+        <div class="item" data-category="nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">水魚の交わり[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ヘルメット<br>
+                - 防御力 34 増加<br>
+                - すべての状態異常 抵抗 30％ 増加<br>
+                - 全ての属性抵抗 + 30％<br>
+                - 防御力 + 105％<br>
+                - 最大HP + 55％<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル -105<br>
+                - 防御力 + 25<br>
+                - (召喚獣、ペット) 異常状態抵抗 10％ 増加<br>
+                - 健康 + 1/レベル 3<br>
+            </p>
+        </div><br>
+        <div class="item" data-category="non-nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="unique-color">予知の棺</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - 冠<br>
+                - 防御力 [ 10~ 12] 増加<br>
+                - 全てのスキルレベル 1 増加<br>
+                - ターゲットの火の抵抗を 55％ 弱化させる。<br>
+                - ターゲットの水の抵抗を 55％ 弱化させる。<br>
+                - ターゲットの風の抵抗を 55％ 弱化させる。<br>
+                - ターゲットの大地の抵抗を 55％ 弱化させる。<br>
+                - ターゲットの光の抵抗を 55％ 弱化させる。<br>
+                - ターゲットの闇の抵抗を 55％ 弱化させる。<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+        </div><br>
+        <div class="item" data-category="nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">予知の棺[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - 冠<br>
+                - 防御力 [ 10~ 12] 増加<br>
+                - 全てのスキルレベル 1 増加<br>
+                - ターゲットの火の抵抗を 66％ 弱化させる。<br>
+                - ターゲットの水の抵抗を 66％ 弱化させる。<br>
+                - ターゲットの風の抵抗を 66％ 弱化させる。<br>
+                - ターゲットの大地の抵抗を 66％ 弱化させる。<br>
+                - ターゲットの光の抵抗を 66％ 弱化させる。<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル -100<br>
+                - 知識 150 増加<br>
+                - スキルレベル+ 1<br>
+                - スキルレベル+ 2<br>
+            </p>
+        </div><br>
+        <div class="item" data-category="non-nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="unique-color">金欄の交わり</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ベルト<br>
+                - 防御力 30 増加<br>
+                - スタックアイテム 15個<br>
+                - スキルレベル+ 5<br>
+                - ペットの全てのステータス + 150<br>
+                - 召喚獣の全てのステータス + 150<br>
+                - 最大HP + 15％<br>
+                - 物理致命打抵抗 55％ 増加<br>
+                - 攻撃速度 + 10％<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+        </div><br>
+        <div class="item" data-category="nx スキル">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">金欄の交わり[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ベルト<br>
+                - 防御力 30 増加<br>
+                - スタックアイテム 15個<br>
+                - スキルレベル+ 8<br>
+                - ペットの全てのステータス + 200<br>
+                - 召喚獣の全てのステータス + 200<br>
+                - 最大HP + 15％<br>
+                - 物理致命打抵抗 55％ 増加<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル -85<br>
+                - 健康 200 増加<br>
+                - 最大HP + 40％<br>
+                - 移動速度 + 50％<br>
+            </p>
+        </div><br>
+        <div class="item" data-category="non-nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="unique-color">アイルスの執着</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ベルト<br>
+                - スタックアイテム 10個<br>
+                - 防御力 [ 28~ 32] 増加<br>
+                - 知識 + 1/レベル 3<br>
+                - 全ての属性抵抗 + 20％<br>
+                - ターゲットの魔法の抵抗を 25％ 弱化させる。<br>
+                - 移動速度 + 10％<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+        </div><br>
+        <div class="item" data-category="nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">アイルスの執着[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - ベルト<br>
+                - スタックアイテム 10個<br>
+                - 防御力 [ 28~ 32] 増加<br>
+                - 知識 + 1/レベル 3<br>
+                - 全ての属性抵抗 + 25％<br>
+                - ターゲットの魔法の抵抗を 30％ 弱化させる。<br>
+                - 移動速度 + 20％<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル -95<br>
+                - 知識 150 増加<br>
+                - 攻撃速度 + 10％<br>
+                - 魔法致命打 8％<br>
+            </p>
+        </div><br>
+        <div class="item" data-category="non-nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="unique-color">栄光の手袋</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - グローブ<br>
+                - 攻撃力 2~ 4<br>
+                - 防御力 10 増加<br>
+                - カリスマ 175 増加<br>
+                - 攻撃速度 + 10％<br>
+                - ターゲットの魔法の抵抗を 25％ 弱化させる。<br>
+                - 魔法致命打 7％<br>
+                - 移動速度 + 10％<br>
+                <span class="option-color">錬成 可能</span><br>
+            </p>
+
+        </div><br>
+        <div class="item" data-category="nx">
+            <img src="./images/hatena.png" alt="">
+            <!-- アイテム -->
+            <p>
+                <span class="nx-unique-color">栄光の手袋[Nx]</span><br>
+                <span class="system-color">&lt;基本情報&gt;</span><br>
+                - グローブ<br>
+                - 攻撃力 2~ 4<br>
+                - 防御力 10 増加<br>
+                - カリスマ 175 増加<br>
+                - 攻撃速度 + 10％<br>
+                - ターゲットの魔法の抵抗を 30％ 弱化させる。<br>
+                - 魔法致命打 10％<br>
+                - 移動速度 + 20％<br>
+                <br>
+                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                - このアイテムの着用レベル -90<br>
+                - カリスマ 150 増加<br>
+                - 知識 175 増加<br>
+                - 攻撃速度 + 15％<br>
+            </p>
+        </div><br>
     </div>
+
+
+
+    <script>
+        // フィルターボタン 対応
+        $(function () {
+            var $btn = $('.category-btn [data-filter]'),
+                $list = $('.category-list [data-category]');
+
+            $btn.on('click', function () {
+                var $btnCat = $(this).attr('data-filter');
+
+                $list.removeClass('is-animate');
+
+                if ($btnCat == 'all') {
+                    $list.show().addClass('is-animate');
+                } else {
+                    $list
+                        .hide()
+                        .removeClass('is-animate')
+                        .filter('[data-category~= "' + $btnCat + '"]')
+                        .show()
+                        .addClass('is-animate');
+                }
+                return false;
+            });
+        });
+
+        // フィルター検索 対応
+        $(function () {
+            searchWord = function () {
+                var searchText = $(this).val(), // 検索ボックスに入力された値
+                    targetText;
+
+                $('.target-area .item').each(function () {
+                    targetText = $(this).text();
+
+                    // 検索対象となるリストに入力された文字列が存在するかどうかを判断
+                    if (targetText.indexOf(searchText) != -1) {
+                        $(this).removeClass('hidden');
+                    } else {
+                        $(this).addClass('hidden');
+                    }
+                });
+            };
+
+            // searchWordの実行
+            $('#search-text').on('input', searchWord);
+        });
+
+    </script>
 </body>
 
 </html>
