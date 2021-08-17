@@ -1,85 +1,104 @@
 body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-    line-height: 1.7;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
 }
 
-
 .item-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: flex-start;
-    margin: 30px auto;
-    width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 15px;
+  justify-content: flex-start;
+  margin: 20px auto;
+  width: 1480px;
 }
 
 .item {
-    background-color: black;
-    border: solid 1px #ad6b29;
-    border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    padding: 2px;
-    width: 400px;
+  background-color: black;
+  border: solid 1px #ad6b29;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  padding: 2px;
+  width: 350px;
 }
 
-.item img {
-    border-radius: 4px;
-    height: 40px;
-    width: 40px;
+.icon {
+/* border-radius: 4px; */
+margin-top: 2px;
+margin-left: 2px;
+height: 36px;
+width: 35px;
+position: relative;
+}
+.icon .rank {
+position: absolute;
+top: 0;
+left: 0;
+}
+.icon .grade {
+position: absolute;
+bottom: 0;
+right: 0;
 }
 
 .system-color {
-    color: #00f8f8;
+  color: #00f8f8;
 }
 
 .option-color {
-    color: #F8F800;
+  color: #F8F800;
 }
 
 .unique-color {
-    color: #E8C898;
-    font-weight: bold;
+  color: #E8C898;
+  font-weight: bold;
 }
 
 .nx-unique-color {
-    color: #CC6633;
-    font-weight: bold;
+  color: #CC6633;
+  font-weight: bold;
 }
 
 
 /* フィルターボタン 対応 */
 .is-animate {
+  opacity: 1;
+  animation: .6s zoom-in;
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0.3;
+    transform: scale(.8);
+  }
+  100% {
     opacity: 1;
-    animation: .6s zoom-in;
+    transform: none;
   }
+}
 
-  @keyframes zoom-in {
-    0% {
-      opacity: 0.3;
-      transform: scale(.8);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-
-  /* フィルター検索 対応 */
-  .search-area input[type="text"] {
-    border: 1px solid #D6D6D6;
-    border-radius: 2em;
-    font-size: 16px;
-    padding: 5px;
-    padding-left: 10px;
-  }
-
-  .search-area input[type="text"]:focus {
-    background: #F9F9F9;
-  }
-  .target-area {
-    margin-top: 50px;
-  }
-  .target-area .hidden {
-    display: none
-  }
+/* フィルター検索 対応 */
+.search-area {
+  /* width: 90%; */
+  margin: 15px auto;
+  text-align:center;
+}
+.search-area input[type="text"] {
+  border: 1px solid #D6D6D6;
+  border-radius: 2em;
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding: 5px;
+  width: 250px;
+}
+.search-area input[type="text"]:focus {
+  background: #ddf7f3;
+}
+.target-area {
+  /* margin-top: 50px; */
+}
+.target-area .hidden {
+  display: none
+}
