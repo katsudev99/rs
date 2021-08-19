@@ -30,22 +30,21 @@ main {
 }
 
 .icon {
-/* border-radius: 4px; */
-margin-top: 2px;
-margin-left: 2px;
-height: 36px;
-width: 35px;
-position: relative;
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 36px;
+  width: 35px;
+  position: relative;
 }
 .icon .rank {
-position: absolute;
-top: 0;
-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .icon .grade {
-position: absolute;
-bottom: 0;
-right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .system-color {
