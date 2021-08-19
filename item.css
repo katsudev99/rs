@@ -1,6 +1,12 @@
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 
 .item-wrapper {
@@ -58,6 +64,14 @@ right: 0;
 .nx-unique-color {
   color: #CC6633;
   font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  background-color: #521317;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
 }
 
 

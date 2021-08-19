@@ -7,7 +7,7 @@
 
     <!-- タイトル、favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png">
-    <title>RED STONE 攻略サイト</title>
+    <title>RED STONE アイテム検索</title>
 
     <!-- CSS, Web Fonts -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -34,351 +34,365 @@
 </head>
 
 <body>
-    <div class="search-area">
+    <header>
 
-        <!-- フィルターボタン 対応 start -->
-        <div class="category-btn">
-            <a href="#" data-filter="all">すべて</a>
-            <a href="#" data-filter="nx">Nx</a>
-            <a href="#" data-filter="non-nx">N</a>
-            <a href="#" data-filter="スキル">スキル</a>
-        </div>
-        <!-- フィルターボタン 対応 end -->
+    </header>
+    <main>
+        <div class="search-area">
 
-        <!-- フィルター検索 対応 start -->
-        <form autocomplete="off">
-            <input type="text" id="search-text" placeholder="アイテム名, オプション名を入力">
-        </form>
-        <!-- フィルター検索 対応 end -->
-    </div>
-
-    <!-- アイテム一覧 -->
-
-    <div class="item-wrapper category-list target-area">
-        <div class="item" data-category="non-nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2949.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+            <!-- フィルターボタン 対応 start -->
+            <div class="category-btn">
+                <a href="#" data-filter="all">すべて</a>
+                <a href="#" data-filter="nx">Nx</a>
+                <a href="#" data-filter="non-nx">N</a>
+                <a href="#" data-filter="スキル">スキル</a>
             </div>
-            <p>
-                <span class="unique-color">雷音</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ネックレス<br>
-                - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
-                - カリスマ <span class="option-color">150</span> 増加<br>
-                - すべての能力値 <span class="option-color">+50</span><br>
-                - 攻撃速度 <span class="option-color">+25</span>％<br>
-                - 移動速度 <span class="option-color">+20</span>％<br>
-                - CP獲得ボーナス <span class="option-color">20</span>％<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
+            <!-- フィルターボタン 対応 end -->
+
+            <!-- フィルター検索 対応 start -->
+            <form autocomplete="off">
+                <input type="text" id="search-text" placeholder="アイテム名, オプション名を入力">
+            </form>
+            <!-- フィルター検索 対応 end -->
         </div>
-        <div class="item" data-category="nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2949.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+
+        <!-- アイテム一覧 -->
+        <div class="item-wrapper category-list target-area">
+            <div class="item" data-category="non-nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2949.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
+                <p>
+                    <span class="unique-color">雷音</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ネックレス<br>
+                    - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+                    - カリスマ <span class="option-color">150</span> 増加<br>
+                    - すべての能力値 <span class="option-color">+50</span><br>
+                    - 攻撃速度 <span class="option-color">+25</span>％<br>
+                    - 移動速度 <span class="option-color">+20</span>％<br>
+                    - CP獲得ボーナス <span class="option-color">20</span>％<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
             </div>
+            <div class="item" data-category="nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2949.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">雷音[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ネックレス<br>
-                - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
-                - カリスマ <span class="option-color">150</span> 増加<br>
-                - すべての能力値 <span class="option-color">+100</span><br>
-                - 攻撃速度 <span class="option-color">+30</span>％<br>
-                - 移動速度 <span class="option-color">+30</span>％<br>
-                - CP獲得ボーナス <span class="option-color">25</span>％<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-100</span><br>
-                - 運 <span class="option-color">175</span> 増加<br>
-                - 最終ダメージ <span class="option-color">+10</span>％<br>
-                - 回避率 <span class="option-color">+10</span>％<br>
-            </p>
-        </div>
-        <div class="item" data-category="non-nx">
-            <div class="icon">
-                <img src="./images/iconItem_2954.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="nx-unique-color">雷音[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ネックレス<br>
+                    - 全てのスキルレベル <span class="option-color">2</span> 増加<br>
+                    - カリスマ <span class="option-color">150</span> 増加<br>
+                    - すべての能力値 <span class="option-color">+100</span><br>
+                    - 攻撃速度 <span class="option-color">+30</span>％<br>
+                    - 移動速度 <span class="option-color">+30</span>％<br>
+                    - CP獲得ボーナス <span class="option-color">25</span>％<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-100</span><br>
+                    - 運 <span class="option-color">175</span> 増加<br>
+                    - 最終ダメージ <span class="option-color">+10</span>％<br>
+                    - 回避率 <span class="option-color">+10</span>％<br>
+                </p>
             </div>
+            <div class="item" data-category="non-nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2954.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="unique-color">水魚の交わり</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ヘルメット<br>
-                - 防御力 <span class="option-color">34</span> 増加<br>
-                - すべての状態異常 抵抗 <span class="option-color">30%</span> 増加<br>
-                - 全ての属性抵抗 <span class="option-color">30%</span> 増加<br>
-                - 防御力 <span class="option-color">+ 85</span>％<br>
-                - 最大HP <span class="option-color">+ 45</span>％<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="nx">
-            <div class="icon">
-                <img src="./images/iconItem_2954.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="unique-color">水魚の交わり</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ヘルメット<br>
+                    - 防御力 <span class="option-color">34</span> 増加<br>
+                    - すべての状態異常 抵抗 <span class="option-color">30%</span> 増加<br>
+                    - 全ての属性抵抗 <span class="option-color">30%</span> 増加<br>
+                    - 防御力 <span class="option-color">+ 85</span>％<br>
+                    - 最大HP <span class="option-color">+ 45</span>％<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
             </div>
+            <div class="item" data-category="nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2954.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">水魚の交わり[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ヘルメット<br>
-                - 防御力 <span class="option-color">34</span> 増加<br>
-                - すべての状態異常 抵抗 <span class="option-color">30%</span> 増加<br>
-                - 全ての属性抵抗 <span class="option-color">30%</span> 増加<br>
-                - 防御力 <span class="option-color">+ 105</span>％<br>
-                - 最大HP <span class="option-color">+ 55</span>％<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-105</span><br>
-                - 防御力 <span class="option-color">+ 25</span><br>
-                - (召喚獣、ペット) 異常状態抵抗 <span class="option-color">10%</span> 増加<br>
-                - 健康 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="non-nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2962.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="nx-unique-color">水魚の交わり[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ヘルメット<br>
+                    - 防御力 <span class="option-color">34</span> 増加<br>
+                    - すべての状態異常 抵抗 <span class="option-color">30%</span> 増加<br>
+                    - 全ての属性抵抗 <span class="option-color">30%</span> 増加<br>
+                    - 防御力 <span class="option-color">+ 105</span>％<br>
+                    - 最大HP <span class="option-color">+ 55</span>％<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-105</span><br>
+                    - 防御力 <span class="option-color">+ 25</span><br>
+                    - (召喚獣、ペット) 異常状態抵抗 <span class="option-color">10%</span> 増加<br>
+                    - 健康 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
+                </p>
             </div>
+            <div class="item" data-category="non-nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2962.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="unique-color">予知の棺</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - 冠<br>
-                - 防御力 [ <span class="option-color">10~ 12</span>] 増加<br>
-                - 全てのスキルレベル <span class="option-color">1</span> 増加<br>
-                - ターゲットの火の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                - ターゲットの水の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                - ターゲットの風の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                - ターゲットの大地の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                - ターゲットの光の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                - ターゲットの闇の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2962.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="unique-color">予知の棺</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - 冠<br>
+                    - 防御力 [ <span class="option-color">10~ 12</span>] 増加<br>
+                    - 全てのスキルレベル <span class="option-color">1</span> 増加<br>
+                    - ターゲットの火の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    - ターゲットの水の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    - ターゲットの風の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    - ターゲットの大地の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    - ターゲットの光の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    - ターゲットの闇の抵抗を <span class="option-color">55%</span> 弱化させる。<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
             </div>
+            <div class="item" data-category="nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2962.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">予知の棺[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - 冠<br>
-                - 防御力 [ <span class="option-color">10~ 12</span>] 増加<br>
-                - 全てのスキルレベル <span class="option-color">1</span> 増加<br>
-                - ターゲットの火の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
-                - ターゲットの水の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
-                - ターゲットの風の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
-                - ターゲットの大地の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
-                - ターゲットの光の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-100</span><br>
-                - 知識 <span class="option-color">150</span> 増加<br>
-                - スキルレベル<span class="option-color">+ 1</span><br>
-                - スキルレベル<span class="option-color">+ 2</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="non-nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2947.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="nx-unique-color">予知の棺[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - 冠<br>
+                    - 防御力 [ <span class="option-color">10~ 12</span>] 増加<br>
+                    - 全てのスキルレベル <span class="option-color">1</span> 増加<br>
+                    - ターゲットの火の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
+                    - ターゲットの水の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
+                    - ターゲットの風の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
+                    - ターゲットの大地の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
+                    - ターゲットの光の抵抗を <span class="option-color">66%</span> 弱化させる。<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-100</span><br>
+                    - 知識 <span class="option-color">150</span> 増加<br>
+                    - スキルレベル<span class="option-color">+ 1</span><br>
+                    - スキルレベル<span class="option-color">+ 2</span><br>
+                </p>
             </div>
+            <div class="item" data-category="non-nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2947.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="unique-color">金欄の交わり</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ベルト<br>
-                - 防御力 <span class="option-color">30</span> 増加<br>
-                - スタックアイテム <span class="option-color">15</span>個<br>
-                - スキルレベル<span class="option-color">+ 5</span><br>
-                - ペットの全てのステータス <span class="option-color">+ 150</span><br>
-                - 召喚獣の全てのステータス <span class="option-color">+ 150</span><br>
-                - 最大HP <span class="option-color">+ 15％</span><br>
-                - 物理致命打抵抗 <span class="option-color">55％</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 10</span>％<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="nx スキル">
-            <div class="icon">
-                <img src="./images/iconItem_2947.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="unique-color">金欄の交わり</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ベルト<br>
+                    - 防御力 <span class="option-color">30</span> 増加<br>
+                    - スタックアイテム <span class="option-color">15</span>個<br>
+                    - スキルレベル<span class="option-color">+ 5</span><br>
+                    - ペットの全てのステータス <span class="option-color">+ 150</span><br>
+                    - 召喚獣の全てのステータス <span class="option-color">+ 150</span><br>
+                    - 最大HP <span class="option-color">+ 15％</span><br>
+                    - 物理致命打抵抗 <span class="option-color">55％</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 10</span>％<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
             </div>
+            <div class="item" data-category="nx スキル">
+                <div class="icon">
+                    <img src="./images/iconItem_2947.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">金欄の交わり[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ベルト<br>
-                - 防御力 <span class="option-color">30</span> 増加<br>
-                - スタックアイテム <span class="option-color">15</span>個<br>
-                - スキルレベル<span class="option-color">+ 8</span><br>
-                - ペットの全てのステータス <span class="option-color">+ 200</span><br>
-                - 召喚獣の全てのステータス <span class="option-color">+ 200</span><br>
-                - 最大HP <span class="option-color">+ 15％</span><br>
-                - 物理致命打抵抗 <span class="option-color">55％</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 10</span>％<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-85</span><br>
-                - 健康 <span class="option-color">200</span> 増加<br>
-                - 最大HP <span class="option-color">+ 40</span>％<br>
-                - 移動速度 <span class="option-color">+ 50</span>％<br>
-            </p>
-        </div>
-        <div class="item" data-category="non-nx">
-            <div class="icon">
-                <img src="./images/iconItem_2959.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="nx-unique-color">金欄の交わり[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ベルト<br>
+                    - 防御力 <span class="option-color">30</span> 増加<br>
+                    - スタックアイテム <span class="option-color">15</span>個<br>
+                    - スキルレベル<span class="option-color">+ 8</span><br>
+                    - ペットの全てのステータス <span class="option-color">+ 200</span><br>
+                    - 召喚獣の全てのステータス <span class="option-color">+ 200</span><br>
+                    - 最大HP <span class="option-color">+ 15％</span><br>
+                    - 物理致命打抵抗 <span class="option-color">55％</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 10</span>％<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-85</span><br>
+                    - 健康 <span class="option-color">200</span> 増加<br>
+                    - 最大HP <span class="option-color">+ 40</span>％<br>
+                    - 移動速度 <span class="option-color">+ 50</span>％<br>
+                </p>
             </div>
+            <div class="item" data-category="non-nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2959.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="unique-color">アイルスの執着</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ベルト<br>
-                - スタックアイテム <span class="option-color">10</span>個<br>
-                - 防御力 [ <span class="option-color">28~ 32</span>] 増加<br>
-                - 知識 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
-                - 全ての属性抵抗 <span class="option-color">+ 20</span>％<br>
-                - ターゲットの魔法の抵抗を <span class="option-color">25％</span> 弱化させる。<br>
-                - 移動速度 <span class="option-color">+ 10</span>％<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
-        </div>
-        <div class="item" data-category="nx">
-            <div class="icon">
-                <img src="./images/iconItem_2959.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="unique-color">アイルスの執着</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ベルト<br>
+                    - スタックアイテム <span class="option-color">10</span>個<br>
+                    - 防御力 [ <span class="option-color">28~ 32</span>] 増加<br>
+                    - 知識 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
+                    - 全ての属性抵抗 <span class="option-color">+ 20</span>％<br>
+                    - ターゲットの魔法の抵抗を <span class="option-color">25％</span> 弱化させる。<br>
+                    - 移動速度 <span class="option-color">+ 10</span>％<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
             </div>
+            <div class="item" data-category="nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2959.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">アイルスの執着[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ベルト<br>
-                - スタックアイテム <span class="option-color">10</span>個<br>
-                - 防御力 [ <span class="option-color">28~ 32</span>] 増加<br>
-                - 知識 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
-                - 全ての属性抵抗 <span class="option-color">+ 25</span>％<br>
-                - ターゲットの魔法の抵抗を <span class="option-color">30％</span> 弱化させる。<br>
-                - 移動速度 <span class="option-color">+ 20</span>％<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-95</span><br>
-                - 知識 <span class="option-color">150</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 10</span>％<br>
-                - 魔法致命打 <span class="option-color">8</span>％<br>
-            </p>
-        </div>
-        <div class="item" data-category="non-nx">
-            <div class="icon">
-                <img src="./images/iconItem_2961.png" alt="">
-                <img class="rank" src="./images/unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                <p>
+                    <span class="nx-unique-color">アイルスの執着[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ベルト<br>
+                    - スタックアイテム <span class="option-color">10</span>個<br>
+                    - 防御力 [ <span class="option-color">28~ 32</span>] 増加<br>
+                    - 知識 <span class="option-color">+ 1</span>/レベル <span class="option-color">3</span><br>
+                    - 全ての属性抵抗 <span class="option-color">+ 25</span>％<br>
+                    - ターゲットの魔法の抵抗を <span class="option-color">30％</span> 弱化させる。<br>
+                    - 移動速度 <span class="option-color">+ 20</span>％<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-95</span><br>
+                    - 知識 <span class="option-color">150</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 10</span>％<br>
+                    - 魔法致命打 <span class="option-color">8</span>％<br>
+                </p>
             </div>
+            <div class="item" data-category="non-nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2961.png" alt="">
+                    <img class="rank" src="./images/unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="unique-color">栄光の手袋</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - グローブ<br>
-                - 攻撃力 <span class="option-color">2~ 4</span><br>
-                - 防御力 <span class="option-color">10</span> 増加<br>
-                - カリスマ <span class="option-color">175</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 10</span>％<br>
-                - ターゲットの魔法の抵抗を <span class="option-color">25％</span> 弱化させる。<br>
-                - 魔法致命打 <span class="option-color">7</span>％<br>
-                - 移動速度 <span class="option-color">+ 10</span>％<br>
-                <span class="option-color">錬成 可能</span><br>
-            </p>
+                <p>
+                    <span class="unique-color">栄光の手袋</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - グローブ<br>
+                    - 攻撃力 <span class="option-color">2~ 4</span><br>
+                    - 防御力 <span class="option-color">10</span> 増加<br>
+                    - カリスマ <span class="option-color">175</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 10</span>％<br>
+                    - ターゲットの魔法の抵抗を <span class="option-color">25％</span> 弱化させる。<br>
+                    - 魔法致命打 <span class="option-color">7</span>％<br>
+                    - 移動速度 <span class="option-color">+ 10</span>％<br>
+                    <span class="option-color">錬成 可能</span><br>
+                </p>
 
-        </div>
-        <div class="item" data-category="nx">
-            <div class="icon">
-                <img src="./images/iconItem_2961.png" alt="">
-                <img class="rank" src="./images/nx_unique.gif" alt="">
-                <img class="grade" src="./images/ultimate_unique.gif" alt="">
             </div>
+            <div class="item" data-category="nx">
+                <div class="icon">
+                    <img src="./images/iconItem_2961.png" alt="">
+                    <img class="rank" src="./images/nx_unique.gif" alt="">
+                    <img class="grade" src="./images/ultimate_unique.gif" alt="">
+                </div>
 
-            <p>
-                <span class="nx-unique-color">栄光の手袋[Nx]</span><br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - グローブ<br>
-                - 攻撃力 <span class="option-color">2~ 4</span><br>
-                - 防御力 <span class="option-color">10</span> 増加<br>
-                - カリスマ <span class="option-color">175</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 10</span>％<br>
-                - ターゲットの魔法の抵抗を <span class="option-color">30％</span> 弱化させる。<br>
-                - 魔法致命打 <span class="option-color">10</span>％<br>
-                - 移動速度 <span class="option-color">+ 20</span>％<br>
-                <br>
-                <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
-                - このアイテムの着用レベル <span class="option-color">-90</span><br>
-                - カリスマ <span class="option-color">150</span> 増加<br>
-                - 知識 <span class="option-color">175</span> 増加<br>
-                - 攻撃速度 <span class="option-color">+ 15</span>％<br>
-            </p>
-        </div>
-        <div class="item" data-category="">
-            <div class="icon">
-                <img src="./images/iconItem_653.png" alt="">
+                <p>
+                    <span class="nx-unique-color">栄光の手袋[Nx]</span><br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - グローブ<br>
+                    - 攻撃力 <span class="option-color">2~ 4</span><br>
+                    - 防御力 <span class="option-color">10</span> 増加<br>
+                    - カリスマ <span class="option-color">175</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 10</span>％<br>
+                    - ターゲットの魔法の抵抗を <span class="option-color">30％</span> 弱化させる。<br>
+                    - 魔法致命打 <span class="option-color">10</span>％<br>
+                    - 移動速度 <span class="option-color">+ 20</span>％<br>
+                    <br>
+                    <span class="system-color">&lt;錬成 オプション 情報&gt;</span><br>
+                    - このアイテムの着用レベル <span class="option-color">-90</span><br>
+                    - カリスマ <span class="option-color">150</span> 増加<br>
+                    - 知識 <span class="option-color">175</span> 増加<br>
+                    - 攻撃速度 <span class="option-color">+ 15</span>％<br>
+                </p>
             </div>
+            <div class="item" data-category="">
+                <div class="icon">
+                    <img src="./images/iconItem_653.png" alt="">
+                </div>
 
-            <p>
-                イフリィト紋章のブローチXLS<br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - 火属性の攻撃力を <span class="option-color">[109~120]</span>％ 強化させる。<br>
-            </p>
-        </div>
-        <div class="item" data-category="">
-            <div class="icon">
-                <img src="./images/iconItem_783.png" alt="">
+                <p>
+                    イフリィト紋章のブローチXLS<br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - 火属性の攻撃力を <span class="option-color">[109~120]</span>％ 強化させる。<br>
+                </p>
             </div>
+            <div class="item" data-category="">
+                <div class="icon">
+                    <img src="./images/iconItem_783.png" alt="">
+                </div>
 
-            <p>
-                サリビラエ紋様の腕刺青 XLS<br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ターゲットの水の抵抗を <span class="option-color">[64~70]</span>％ 弱化させる。<br>
-            </p>
-        </div>
-        <div class="item" data-category="">
-            <div class="icon">
-                <img src="./images/iconItem_818.png" alt="">
+                <p>
+                    サリビラエ紋様の腕刺青 XLS<br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ターゲットの水の抵抗を <span class="option-color">[64~70]</span>％ 弱化させる。<br>
+                </p>
             </div>
+            <div class="item" data-category="">
+                <div class="icon">
+                    <img src="./images/iconItem_818.png" alt="">
+                </div>
 
-            <p>
-                オプシディアンガーゴイル紋様の肩刺青XLS<br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - ターゲットの風の抵抗を <span class="option-color">[64~70]</span>％ 弱化させる。<br>
-            </p>
-        </div>
-        <div class="item" data-category="">
-            <div class="icon">
-                <img src="./images/iconItem_728.png" alt="">
+                <p>
+                    オプシディアンガーゴイル紋様の肩刺青XLS<br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - ターゲットの風の抵抗を <span class="option-color">[64~70]</span>％ 弱化させる。<br>
+                </p>
             </div>
+            <div class="item" data-category="">
+                <div class="icon">
+                    <img src="./images/iconItem_728.png" alt="">
+                </div>
 
-            <p>
-                イフリィト装飾の十字架 XLS<br>
-                <span class="system-color">&lt;基本情報&gt;</span><br>
-                - 火属性の攻撃力を <span class="option-color">[109~120]</span>％ 強化させる。<br>
-            </p>
+                <p>
+                    イフリィト装飾の十字架 XLS<br>
+                    <span class="system-color">&lt;基本情報&gt;</span><br>
+                    - 火属性の攻撃力を <span class="option-color">[109~120]</span>％ 強化させる。<br>
+                </p>
+            </div>
         </div>
-    </div>
+    </main>
 
-
+    <!-- フッター -->
+    <footer>
+        <p>
+            当サイトで利用している画像及びデータは、株式会社ゲームオンに帰属します。<br>
+            許可無くご利用又は転用になられる事は出来ませんので、予めご了承下さい。<br>
+            <br>
+            <a href="https://members.redsonline.jp/" target="_blank"><img src="./images/redfan_150_50.gif"
+                    alt=""></a><br>
+            Copyright (c) L&K Co., Ltd. All Rights Reserved. License to GameOn Co., Ltd.<br>
+        </p>
+    </footer>
 
     <script>
         // フィルターボタン 対応
@@ -428,12 +442,6 @@
         });
 
     </script>
-    <!-- 画面下部 フッター -->
-    <!-- <footer>
-        <div class="wrapper">
-            <p><small>&copy; 2019 XXX</small></p>
-        </div>
-    </footer> -->
 </body>
 
 </html>
