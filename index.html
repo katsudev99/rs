@@ -86,8 +86,15 @@
                     }));
 
                     // アイテム名
+                    var item_name_class = ""
+                    if (data[i].Rank == "U") {
+                        item_name_class = "unique-color";
+                    }
+                    else if (data[i].Rank == "NX") {
+                        item_name_class = "nx-unique-color";
+                    }
                     item.children(".item-p").append($("<p>").attr({
-                        class: "unique-color"
+                        class: item_name_class
                     }).text(data[i].Name));
 
                     // 説明文（"基本情報"）
