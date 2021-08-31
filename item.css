@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #c2e7f2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4159a7;
+  border-radius: 10px;
+}
+
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
