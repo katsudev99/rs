@@ -19,14 +19,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $.getJSON("data.json", function (data) {
+            $.getJSON("item.json", function (data) {
+                //　変数定義
                 var
-                    ulObj = $("#demo"),
+                    item_wrapper = $(".item-wrapper"),
                     len = data.length;
-                console.log(len);
 
+                // アイテムを繰り返し表示する
                 for (var i = 0; i < len; i++) {
-                    ulObj.append($("<li>").attr({ "id": data[i].id }).text(data[i].name));
+                    item_wrapper.append($("<div>").attr({
+                        id: data[i].Id,
+                        class: "item"
+                    }));
+
+                    var item = $("#" + data[i].Id);
+                    // アイテム アイコン
+                    item.append($("<img>").attr({
+                        src: "./images/hatena.png",
+                        alt: ""
+                    }));
+
+                    item.append($("<p>").attr({
+                        class: "item-p"
+                    }));
+
+                    // アイテム名
+                    item.children(".item-p").append($("<span>").attr({
+                        class: "unique-color"
+                    }).text(data[i].Name)).append($("<br>"));
+
+                    // 説明文（"基本情報"）
+                    item.children(".item-p").append($("<span>").attr({
+                        class: "system-color-color"
+                    }).text("<基本情報>")).append($("<br>"));
                 }
             });
         });
@@ -58,7 +83,7 @@
 
         <!-- アイテム一覧 -->
         <div class="item-wrapper category-list target-area">
-            <div class="item" data-category="non-nx スキル">
+            <!-- <div class="item" data-category="non-nx スキル">
                 <div class="icon">
                     <img src="./images/iconItem_2949.png" alt="">
                     <img class="rank" src="./images/unique.gif" alt="">
@@ -378,7 +403,7 @@
                     <span class="system-color">&lt;基本情報&gt;</span><br>
                     - 火属性の攻撃力を <span class="option-color">[109~120]</span>％ 強化させる。<br>
                 </p>
-            </div>
+            </div> -->
         </div>
     </main>
 
