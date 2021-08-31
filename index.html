@@ -34,11 +34,43 @@
                     }));
 
                     var item = $("#" + data[i].Id);
-                    // アイテム アイコン
+                    // アイテムアイコンの表示
                     item.append($("<img>").attr({
-                        src: "./images/hatena.png",
+                        src: `./images/${data[i].Image}`, // バッククオートを使うと、文字列内で"変数"を扱える
                         alt: ""
                     }));
+
+                    // Rankアイコンを取得できた場合、表示する
+                    if (data[i].Rank == "U" || data[i].Rank == "NX") {
+                        var rank_icon_path = "";
+                        if (data[i].Rank == "U") {
+                            rank_icon_path = "./images/unique.gif";
+                        }
+                        else if (data[i].Rank == "NX") {
+                            rank_icon_path = "./images/nx_unique.gif";
+                        }
+                        // rankアイコンの表示
+                        item.append($("<img>").attr({
+                            src: rank_icon_path,
+                            alt: ""
+                        }));
+                    }
+
+                    // Gradeアイコンを取得できた場合、表示する
+                    if (data[i].Grade == "DX" || data[i].Grade == "UM") {
+                        var grade_icon_path = "";
+                        if (data[i].Rank == "DX") {
+                            grade_icon_path = "./images/dx_unique.gif";
+                        }
+                        else if (data[i].Rank == "UM") {
+                            grade_icon_path = "./images/ultimate_unique.gif";
+                        }
+                        // rankアイコンの表示
+                        item.append($("<img>").attr({
+                            src: grade_icon_path,
+                            alt: ""
+                        }));
+                    }
 
                     item.append($("<p>").attr({
                         class: "item-p"
