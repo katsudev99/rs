@@ -67,10 +67,10 @@
                     // Gradeアイコンを取得できた場合、表示する
                     if (data[i].Grade == "DX" || data[i].Grade == "UM") {
                         var grade_icon_path = "";
-                        if (data[i].Rank == "DX") {
+                        if (data[i].Grade == "DX") {
                             grade_icon_path = "./images/dx_unique.gif";
                         }
-                        else if (data[i].Rank == "UM") {
+                        else if (data[i].Grade == "UM") {
                             grade_icon_path = "./images/ultimate_unique.gif";
                         }
                         // rankアイコンの表示
