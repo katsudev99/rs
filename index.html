@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap">
 
     <!-- JavaScript, jQuery -->
-    <script src="./js/item.js"></script>
+    <!-- <script src="./js/item.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(function () {
@@ -34,12 +34,12 @@
                     }));
 
                     // 追加したdiv(class="item")の取得
-                    var item = $("#" + data[i].Id);
+                    var item = $(`#${data[i].Id}`);
 
                     item.append($("<div>").attr({
                         class: "icon",
                     }));
-                    var icon = $(`#${data[i].Id}` + ".icon");
+                    var icon = $(`#${data[i].Id}` > ".icon");
 
                     // アイテムアイコンの表示
                     icon.append($("<img>").attr({
