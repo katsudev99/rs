@@ -106,11 +106,19 @@
 
                     // 錬成可能であれば、メッセージを表示する
                     if ("NxMsg" in data[i]) {
-                        item.children(".item-p").append($("<p>").text(`- ${data[i].NxMsg}`));
+                        item.children(".item-p").append($("<p>").attr({
+                            class: "option-color"
+                        }).text(`- ${data[i].NxMsg}`));
                     }
 
                     // Nxオプションを全て表示する
                     if ("NxOption" in data[i]) {
+                        // 説明文（"錬成情報"）
+                        item.children(".item-p").append($("<p>").attr({
+                            class: "system-color"
+                        }).text("<錬成 オプション 情報>"));
+
+                        // 錬成オプションを4つ表示する
                         nx_option_len = data[i].NxOption.length
                         for (var j = 0; j < nx_option_len; j++) {
                             item.children(".item-p").append($("<p>").text(`- ${data[i].NxOption[j]}`));
