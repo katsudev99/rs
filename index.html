@@ -29,7 +29,8 @@
                 for (var i = 0; i < len; i++) {
                     item_wrapper.append($("<div>").attr({
                         id: data[i].Id,
-                        class: "item"
+                        class: "item",
+                        'data-category': "aa"
                     }));
 
                     var item = $("#" + data[i].Id);
@@ -69,7 +70,7 @@
             <div class="category-btn">
                 <a href="#" data-filter="all">すべて</a>
                 <a href="#" data-filter="nx">Nx</a>
-                <a href="#" data-filter="non-nx">N</a>
+                <a href="#" data-filter="n">N</a>
                 <a href="#" data-filter="スキル">スキル</a>
             </div>
             <!-- フィルターボタン 対応 end -->
