@@ -94,6 +94,9 @@
                     item.children(".item-p").append($("<span>").attr({
                         class: "system-color-color"
                     }).text("<基本情報>")).append($("<br>"));
+
+                    // 部位
+                    item.children(".item-p").append($("<span>")).text(data[i].Part).append($("<br>"));
                 }
             });
         });
