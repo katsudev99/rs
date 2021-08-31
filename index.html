@@ -86,17 +86,17 @@
                     }));
 
                     // アイテム名
-                    item.children(".item-p").append($("<span>").attr({
+                    item.children(".item-p").append($("<p>").attr({
                         class: "unique-color"
-                    }).text(data[i].Name)).append($("<br>"));
+                    }).text(data[i].Name));
 
                     // 説明文（"基本情報"）
-                    item.children(".item-p").append($("<span>").attr({
+                    item.children(".item-p").append($("<p>").attr({
                         class: "system-color-color"
-                    }).text("<基本情報>")).append($("<br>"));
+                    }).text("<基本情報>"));
 
                     // 部位
-                    item.children(".item-p").append($("<span>").text(data[i].Part)).append($("<br>"));
+                    item.children(".item-p").append($("<p>").text(`- ${data[i].Part}`));
                 }
             });
         });
