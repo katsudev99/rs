@@ -33,9 +33,16 @@
                         "data-category": data[i].Rank == "NX" ? "nx" : "n"
                     }));
 
+                    // 追加したdiv(class="item")の取得
                     var item = $("#" + data[i].Id);
+
+                    item.append($("<div>").attr({
+                        class: "icon",
+                    }));
+                    var icon = $("#" + data[i].Id).$(".icon");
+
                     // アイテムアイコンの表示
-                    item.append($("<img>").attr({
+                    icon.append($("<img>").attr({
                         src: `./images/${data[i].Image}`, // バッククオートを使うと、文字列内で"変数"を扱える
                         alt: ""
                     }));
@@ -50,8 +57,9 @@
                             rank_icon_path = "./images/nx_unique.gif";
                         }
                         // rankアイコンの表示
-                        item.append($("<img>").attr({
+                        icon.append($("<img>").attr({
                             src: rank_icon_path,
+                            class: "rank",
                             alt: ""
                         }));
                     }
@@ -66,8 +74,9 @@
                             grade_icon_path = "./images/ultimate_unique.gif";
                         }
                         // rankアイコンの表示
-                        item.append($("<img>").attr({
+                        icon.append($("<img>").attr({
                             src: grade_icon_path,
+                            class: "grade",
                             alt: ""
                         }));
                     }
