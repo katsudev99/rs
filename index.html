@@ -97,6 +97,12 @@
 
                     // 部位
                     item.children(".item-p").append($("<p>").text(`- ${data[i].Part}`));
+
+                    // オプションを全て表示する
+                    option_len = data[i].option.length
+                    for (var j = 0; j < option_len; j++) {
+                        item.children(".item-p").append($("<p>").text(`- ${data[i].Option[j]}`));
+                    }
                 }
             });
         });
