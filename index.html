@@ -111,9 +111,10 @@
                         }).text(`- ${data[i].NxMsg}`));
                     }
 
-                    // Nxオプションを全て表示する
+                    // Nxオプションがあれば、全て表示する
                     if ("NxOption" in data[i]) {
                         // 説明文（"錬成情報"）
+                        item.children(".item-p").append($("<br>"));
                         item.children(".item-p").append($("<p>").attr({
                             class: "system-color"
                         }).text("<錬成 オプション 情報>"));
