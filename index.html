@@ -30,7 +30,7 @@
                     item_wrapper.append($("<div>").attr({
                         id: data[i].Id,
                         class: "item",
-                        "data-category": data[i].Rank = "NX" ? "nx" : "n"
+                        "data-category": data[i].Rank == "NX" ? "nx" : "n"
                     }));
 
                     var item = $("#" + data[i].Id);
