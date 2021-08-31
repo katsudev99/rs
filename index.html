@@ -103,6 +103,19 @@
                     for (var j = 0; j < option_len; j++) {
                         item.children(".item-p").append($("<p>").text(`- ${data[i].Option[j]}`));
                     }
+
+                    // 錬成可能であれば、メッセージを表示する
+                    if ("NxMsg" in data[i]) {
+                        item.children(".item-p").append($("<p>").text(`- ${data[i].NxMsg}`));
+                    }
+
+                    // Nxオプションを全て表示する
+                    if ("NxOption" in data[i]) {
+                        nx_option_len = data[i].NxOption.length
+                        for (var j = 0; j < nx_option_len; j++) {
+                            item.children(".item-p").append($("<p>").text(`- ${data[i].NxOption[j]}`));
+                        }
+                    }
                 }
             });
         });
