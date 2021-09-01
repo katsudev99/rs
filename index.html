@@ -256,6 +256,37 @@
                             item.children(".item-p").append($("<p>").text(`- ${data[i].NxOption[j]}`));
                         }
                     }
+
+                    // 要求能力値
+                    if ("Require" in data[i]) {
+                        // 説明文（"要求能力値"）
+                        item.children(".item-p").append($("<br>"));
+                        item.children(".item-p").append($("<p>").attr({
+                            class: "system-color"
+                        }).text("<要求能力値>"));
+
+                        // 要求能力値を表示する
+                        require_len = data[i].Require.length
+                        for (var j = 0; j < require_len; j++) {
+                            item.children(".item-p").append($("<p>").text(`- ${data[i].Require[j]}`));
+                        }
+                    }
+
+                    // 着用可能職業
+                    if ("Job" in data[i]) {
+                        // 説明文（"着用/使用可能な職業"）
+                        item.children(".item-p").append($("<br>"));
+                        item.children(".item-p").append($("<p>").attr({
+                            class: "system-color"
+                        }).text("<着用/使用可能な職業>"));
+
+                        // 要求能力値を表示する
+                        job_len = data[i].Job.length
+                        for (var j = 0; j < job_len; j++) {
+                            item.children(".item-p").append($("<p>").text(`- ${data[i].Job[j]}`));
+                        }
+                    }
+
                 }
             });
         });
