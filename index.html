@@ -155,7 +155,7 @@
                         "data-category": data[i].Rank == "NX" ? "nx" : "n"
                     }));
 
-                    // 追加したdiv(class="item")の取得
+                    // 追加したdivの取得
                     var item = $(`#${data[i].Id}`);
 
                     item.append($("<div>").attr({
@@ -262,7 +262,7 @@
                         item.children(".item-p").append($("<div>").attr({
                             class: "require-job-wrapper",
                         }));
-                        var wrapper = $(".require-job-wrapper");
+                        var wrapper = $(`#${data[i].Id} .require-job-wrapper`);
 
                         // 要求能力値
                         if ("Require" in data[i]) {
