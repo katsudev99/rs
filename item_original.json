@@ -1,6 +1,6 @@
 [
     {
-        "Id": 653,
+        "Id": "653",
         "Image": "iconItem_653.png",
         "Rank": "N",
         "Grade": "DX",
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "Id": 658,
+        "Id": "658",
         "Image": "iconItem_658.png",
         "Rank": "N",
         "Grade": "DX",
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "Id": 668,
+        "Id": "668",
         "Image": "iconItem_668.png",
         "Rank": "N",
         "Grade": "DX",
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "Id": 663,
+        "Id": "663",
         "Image": "iconItem_663.png",
         "Rank": "N",
         "Grade": "DX",
@@ -44,7 +44,7 @@
         ]
     },
     {
-        "Id": 673,
+        "Id": "673",
         "Image": "iconItem_673.png",
         "Rank": "N",
         "Grade": "DX",
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "Id": 753,
+        "Id": "753",
         "Image": "iconItem_753.png",
         "Rank": "N",
         "Grade": "DX",
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "Id": 758,
+        "Id": "758",
         "Image": "iconItem_758.png",
         "Rank": "N",
         "Grade": "DX",
@@ -77,7 +77,7 @@
         ]
     },
     {
-        "Id": 763,
+        "Id": "763",
         "Image": "iconItem_763.png",
         "Rank": "N",
         "Grade": "DX",
@@ -88,7 +88,7 @@
         ]
     },
     {
-        "Id": 768,
+        "Id": "768",
         "Image": "iconItem_768.png",
         "Rank": "N",
         "Grade": "DX",
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "Id": 773,
+        "Id": "773",
         "Image": "iconItem_773.png",
         "Rank": "N",
         "Grade": "DX",
@@ -110,7 +110,7 @@
         ]
     },
     {
-        "Id": 783,
+        "Id": "783",
         "Image": "iconItem_783.png",
         "Rank": "N",
         "Grade": "DX",
@@ -121,7 +121,7 @@
         ]
     },
     {
-        "Id": 818,
+        "Id": "818",
         "Image": "iconItem_818.png",
         "Rank": "N",
         "Grade": "DX",
@@ -132,7 +132,7 @@
         ]
     },
     {
-        "Id": 728,
+        "Id": "728",
         "Image": "iconItem_728.png",
         "Rank": "N",
         "Grade": "DX",
@@ -143,8 +143,8 @@
         ]
     },
     {
-        "Id": 0,
-        "Image": "iconItem_2954.png",
+        "Id": "2967",
+        "Image": "iconItem_2967.png",
         "Rank": "U",
         "Grade": "UM",
         "Name": "辛苦の果実",
@@ -161,8 +161,8 @@
         "NxMsg": "錬成可能"
     },
     {
-        "Id": 1,
-        "Image": "iconItem_2962.png",
+        "Id": "2967NX",
+        "Image": "iconItem_2967.png",
         "Rank": "NX",
         "Grade": "UM",
         "Name": "辛苦の果実[Nx]",
