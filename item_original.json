@@ -1,5 +1,49 @@
 [
     {
+        "Id": 653,
+        "Image": "iconItem_653.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "イフリィト紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "火属性の攻撃力を [109~120]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 783,
+        "Image": "iconItem_783.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "サリビラエ紋様の腕刺青",
+        "Part": "腕刺青",
+        "Option": [
+            "ターゲットの水の抵抗を [64~70]％ 弱化させる。"
+        ]
+    },
+    {
+        "Id": 818,
+        "Image": "iconItem_818.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "オプシディアンガーゴイル紋様の肩刺青XLS",
+        "Part": "肩刺青",
+        "Option": [
+            "ターゲットの風の抵抗を [64~70]％ 弱化させる。"
+        ]
+    },
+    {
+        "Id": 728,
+        "Image": "iconItem_728.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "イフリィト装飾の十字架",
+        "Part": "十字架",
+        "Option": [
+            "火属性の攻撃力を [109~120]％ 強化させる。"
+        ]
+    },
+    {
         "Id": 0,
         "Image": "iconItem_2954.png",
         "Rank": "U",
