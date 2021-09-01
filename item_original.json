@@ -4,7 +4,7 @@
         "Image": "iconItem_653.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "イフリィト紋章のブローチXLS",
+        "Name": "イフリィト紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
             "火属性の攻撃力を [109~120]％ 強化させる。"
@@ -15,7 +15,7 @@
         "Image": "iconItem_658.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "トリトン紋章のブローチXLS",
+        "Name": "トリトン紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
             "水属性の攻撃力を [64~70]％ 強化させる。"
@@ -26,7 +26,7 @@
         "Image": "iconItem_668.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "爆風紋章のブローチXLS",
+        "Name": "爆風紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
             "風属性の攻撃力を [55~60]％ 強化させる。"
@@ -37,54 +37,76 @@
         "Image": "iconItem_663.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "エント紋章のブローチXLS",
+        "Name": "エント紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
             "大地属性の攻撃力を [145~160]％ 強化させる。"
         ]
     },
     {
-        "Id": 653,
-        "Image": "iconItem_653.png",
+        "Id": 673,
+        "Image": "iconItem_673.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "ペイルライト紋章のブローチXLS",
+        "Name": "ペイルライト紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
             "光属性の攻撃力を [91~100]％ 強化させる。"
         ]
     },
     {
-        "Id": 658,
-        "Image": "iconItem_658.png",
+        "Id": 753,
+        "Image": "iconItem_753.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "トリトン紋章のブローチXLS",
+        "Name": "火炎鬼紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
-            "水属性の攻撃力を [64~70]％ 強化させる。"
+            "ターゲットの火の抵抗を [46~50]％ 弱化させる。"
         ]
     },
     {
-        "Id": 668,
-        "Image": "iconItem_668.png",
+        "Id": 758,
+        "Image": "iconItem_758.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "爆風紋章のブローチXLS",
+        "Name": "サリビラエ紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
-            "風属性の攻撃力を [55~60]％ 強化させる。"
+            "ターゲットの水の抵抗を [64~70]％ 弱化させる。"
         ]
     },
     {
-        "Id": 663,
-        "Image": "iconItem_663.png",
+        "Id": 763,
+        "Image": "iconItem_763.png",
         "Rank": "N",
         "Grade": "DX",
-        "Name": "エント紋章のブローチXLS",
+        "Name": "オプシディアンガーゴイル紋章のブローチ XLS",
         "Part": "ブローチ",
         "Option": [
-            "大地属性の攻撃力を [145~160]％ 強化させる。"
+            "ターゲットの風の抵抗を [64~70]％ 弱化させる。"
+        ]
+    },
+    {
+        "Id": 768,
+        "Image": "iconItem_768.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "ダイヤモンドゴーレム紋章のブローチ XLS",
+        "Part": "ブローチ",
+        "Option": [
+            "ターゲットの大地の抵抗を [109~120]％ 弱化させる。"
+        ]
+    },
+    {
+        "Id": 773,
+        "Image": "iconItem_773.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "燦爛な紋章のブローチ XLS",
+        "Part": "ブローチ",
+        "Option": [
+            "ターゲットの光の抵抗を [46~50]％ 弱化させる。"
         ]
     },
     {

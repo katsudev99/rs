@@ -28,7 +28,7 @@ main {
   column-gap: 15px;
   justify-content: flex-start;
   margin: 20px auto;
-  width: 1480px;
+  width: 1500px;
 }
 
 .item {
@@ -38,7 +38,7 @@ main {
   color: white;
   font-size: 14px;
   padding: 2px;
-  width: 350px;
+  width: 360px;
 }
 
 .icon {
