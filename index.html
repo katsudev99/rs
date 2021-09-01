@@ -225,7 +225,9 @@
                     }).text("<基本情報>"));
 
                     // 部位
-                    item.children(".item-p").append($("<p>").text(`- ${data[i].Part}`));
+                    item.children(".item-p").append($("<p>").attr({
+                        class: "option-color"
+                    }).text(`- ${data[i].Part}`));
 
                     // オプションを全て表示する
                     option_len = data[i].Option.length
