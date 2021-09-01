@@ -11,6 +11,83 @@
         ]
     },
     {
+        "Id": 658,
+        "Image": "iconItem_658.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "トリトン紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "水属性の攻撃力を [64~70]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 668,
+        "Image": "iconItem_668.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "爆風紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "風属性の攻撃力を [55~60]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 663,
+        "Image": "iconItem_663.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "エント紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "大地属性の攻撃力を [145~160]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 653,
+        "Image": "iconItem_653.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "ペイルライト紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "光属性の攻撃力を [91~100]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 658,
+        "Image": "iconItem_658.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "トリトン紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "水属性の攻撃力を [64~70]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 668,
+        "Image": "iconItem_668.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "爆風紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "風属性の攻撃力を [55~60]％ 強化させる。"
+        ]
+    },
+    {
+        "Id": 663,
+        "Image": "iconItem_663.png",
+        "Rank": "N",
+        "Grade": "DX",
+        "Name": "エント紋章のブローチXLS",
+        "Part": "ブローチ",
+        "Option": [
+            "大地属性の攻撃力を [145~160]％ 強化させる。"
+        ]
+    },
+    {
         "Id": 783,
         "Image": "iconItem_783.png",
         "Rank": "N",
