@@ -96,9 +96,6 @@ main {
   column-gap: 20px;
   display: flex;
   justify-content: flex-start;
-
-  position: unset;
-  bottom: 0;
 }
 
 .job {
