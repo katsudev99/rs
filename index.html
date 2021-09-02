@@ -21,6 +21,7 @@
     <!-- <script type="text/javascript" src="./data.js"></script>
     <script>
         $(function () {
+
             // 変数定義
             var
                 item_wrapper = $(".item-wrapper"),
@@ -34,7 +35,7 @@
                     "data-category": data[i].Rank == "NX" ? "nx" : "n"
                 }));
 
-                // 追加したdiv(class="item")の取得
+                // 追加したdivの取得
                 var item = $(`#${data[i].Id}`);
 
                 item.append($("<div>").attr({
@@ -104,7 +105,9 @@
                 }).text("<基本情報>"));
 
                 // 部位
-                item.children(".item-p").append($("<p>").text(`- ${data[i].Part}`));
+                item.children(".item-p").append($("<p>").attr({
+                    class: "option-color"
+                }).text(`- ${data[i].Part}`));
 
                 // オプションを全て表示する
                 option_len = data[i].Option.length
@@ -131,6 +134,48 @@
                     nx_option_len = data[i].NxOption.length
                     for (var j = 0; j < nx_option_len; j++) {
                         item.children(".item-p").append($("<p>").text(`- ${data[i].NxOption[j]}`));
+                    }
+                }
+
+                if ("Require" in data[i] || "Job" in data[i]) {
+                    item.append($("<br>"));
+                    item.append($("<div>").attr({
+                        class: "require-job-wrapper",
+                    }));
+                    var wrapper = $(`#${data[i].Id}`).find(".require-job-wrapper");
+
+                    // 要求能力値
+                    if ("Require" in data[i]) {
+                        wrapper.append($("<div>").attr({ class: "require" }));
+                        var require = $(`#${data[i].Id}`).find(".require");
+
+                        // 説明文（"要求能力値"）
+                        require.append($("<p>").attr({
+                            class: "system-color"
+                        }).text("<要求能力値>"));
+
+                        // 要求能力値を表示する
+                        require_len = data[i].Require.length
+                        for (var j = 0; j < require_len; j++) {
+                            require.append($("<p>").text(`- ${data[i].Require[j]}`));
+                        }
+                    }
+
+                    // 着用可能職業
+                    if ("Job" in data[i]) {
+                        wrapper.append($("<div>").attr({ class: "job" }));
+                        var job = $(`#${data[i].Id}`).find(".job");
+
+                        // 説明文（"着用/使用可能な職業"）
+                        job.append($("<p>").attr({
+                            class: "system-color"
+                        }).text("<着用/使用可能な職業>"));
+
+                        // 要求能力値を表示する
+                        job_len = data[i].Job.length
+                        for (var j = 0; j < job_len; j++) {
+                            job.append($("<p>").text(`- ${data[i].Job[j]}`));
+                        }
                     }
                 }
             }
@@ -258,16 +303,16 @@
                     }
 
                     if ("Require" in data[i] || "Job" in data[i]) {
-                        item.children(".item-p").append($("<br>"));
-                        item.children(".item-p").append($("<div>").attr({
+                        item.append($("<br>"));
+                        item.append($("<div>").attr({
                             class: "require-job-wrapper",
                         }));
-                        var wrapper = $(`#${data[i].Id} .require-job-wrapper`);
+                        var wrapper = $(`#${data[i].Id}`).find(".require-job-wrapper");
 
                         // 要求能力値
                         if ("Require" in data[i]) {
                             wrapper.append($("<div>").attr({ class: "require" }));
-                            var require = $(".require");
+                            var require = $(`#${data[i].Id}`).find(".require");
 
                             // 説明文（"要求能力値"）
                             require.append($("<p>").attr({
@@ -284,7 +329,7 @@
                         // 着用可能職業
                         if ("Job" in data[i]) {
                             wrapper.append($("<div>").attr({ class: "job" }));
-                            var job = $(".job");
+                            var job = $(`#${data[i].Id}`).find(".job");
 
                             // 説明文（"着用/使用可能な職業"）
                             job.append($("<p>").attr({
